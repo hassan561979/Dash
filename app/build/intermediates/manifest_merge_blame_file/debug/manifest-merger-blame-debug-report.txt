@@ -1,0 +1,669 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.github.muneebwanee.dash"
+4    android:versionCode="1"
+5    android:versionName="2.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml
+10    <!-- location -->
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:6:5-79
+11-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:6:22-76
+12    <!-- storage -->
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:8:5-81
+13-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:9:5-80
+14-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:9:22-77
+15    <!-- calls -->
+16    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+16-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:11:5-81
+16-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:12:5-75
+17-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:12:22-72
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:13:5-68
+18-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:13:22-66
+19    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+19-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:14:5-15:47
+19-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:16:5-71
+20-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:16:22-68
+21    <uses-permission android:name="android.permission.READ_CONTACTS" />
+21-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:17:5-72
+21-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:17:22-69
+22    <!-- message -->
+23    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+23-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:19:5-70
+23-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:19:22-67
+24    <uses-permission android:name="android.permission.READ_SMS" />
+24-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:20:5-67
+24-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:20:22-64
+25    <uses-permission android:name="android.permission.SEND_SMS" />
+25-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:21:5-67
+25-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:21:22-64
+26    <uses-permission android:name="android.permission.WRITE_SMS" />
+26-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:22:5-68
+26-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:22:22-65
+27    <!-- camera -->
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:24:5-65
+28-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:24:22-62
+29    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+29-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:25:5-78
+29-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:25:22-75
+30
+31    <uses-feature
+31-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:27:5-29:35
+32        android:name="android.hardware.camera"
+32-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:28:9-47
+33        android:required="true" />
+33-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:29:9-32
+34
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:31:5-79
+35-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:31:22-76
+36    <uses-permission android:name="android.permission.INTERNET" />
+36-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:32:5-67
+36-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:32:22-64
+37    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+37-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:33:5-81
+37-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:33:22-78
+38    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+38-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:34:5-84
+38-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:34:22-81
+39    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+39-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:35:5-94
+39-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:35:22-92
+40    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+40-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:36:5-38:47
+40-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:37:9-62
+41
+42    <!-- vibrate -->
+43    <uses-permission android:name="android.permission.VIBRATE" />
+43-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:41:5-66
+43-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:41:22-63
+44
+45    <uses-feature
+45-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+46        android:glEsVersion="0x00020000"
+46-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+47        android:required="true" />
+47-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+48
+49    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+49-->[com.google.android.gms:play-services-measurement-api:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/4b3511beb2e4e6da526b6458cc3827b5/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
+49-->[com.google.android.gms:play-services-measurement-api:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/4b3511beb2e4e6da526b6458cc3827b5/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:22-65
+50    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+50-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+50-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+51    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+51-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:26:5-110
+51-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:26:22-107
+52
+53    <application
+53-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:43:5-145:19
+54        android:name="com.github.muneebwanee.dash.app.Dash"
+54-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:44:9-33
+55        android:allowBackup="true"
+55-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:45:9-35
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/c66df4916d857308b5e324a17ea615fe/core-1.1.0/AndroidManifest.xml:24:18-86
+57        android:debuggable="true"
+58        android:icon="@mipmap/ic_launcher"
+58-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:46:9-43
+59        android:label="@string/app_name"
+59-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:47:9-41
+60        android:roundIcon="@mipmap/ic_launcher"
+60-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:48:9-48
+61        android:sharedUserId="android.uid.system"
+61-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:52:9-50
+62        android:supportsRtl="true"
+62-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:49:9-35
+63        android:theme="@style/AppTheme" >
+63-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:50:9-40
+64        <activity
+64-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:54:9-62:20
+65            android:name="com.github.muneebwanee.dash.ui.activities.login.LoginActivity"
+65-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:55:13-62
+66            android:theme="@style/Login" >
+66-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:56:13-41
+67            <intent-filter>
+67-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:57:13-61:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:58:17-69
+68-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:58:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:60:17-77
+70-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:60:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:63:9-65:44
+74            android:name="com.github.muneebwanee.dash.ui.activities.register.RegisterActivity"
+74-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:64:13-68
+75            android:theme="@style/Login" />
+75-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:65:13-41
+76        <activity
+76-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:66:9-69:62
+77            android:name="com.github.muneebwanee.dash.ui.activities.mainparent.MainParentActivity"
+77-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:67:13-72
+78            android:configChanges="orientation|screenSize"
+78-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:69:13-59
+79            android:theme="@style/AppTheme" />
+79-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:68:13-44
+80        <activity
+80-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:70:9-73:62
+81            android:name="com.github.muneebwanee.dash.ui.activities.mainchild.MainChildActivity"
+81-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:71:13-70
+82            android:configChanges="orientation|screenSize"
+82-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:73:13-59
+83            android:theme="@style/Child" />
+83-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:72:13-41
+84        <activity
+84-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:74:9-76:43
+85            android:name="com.github.muneebwanee.dash.ui.activities.lock.LockActivity"
+85-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:75:13-60
+86            android:theme="@style/Lock" />
+86-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:76:13-40
+87        <activity
+87-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:77:9-80:50
+88            android:name="com.github.muneebwanee.dash.ui.activities.gallery.ViewPhoto"
+88-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:78:13-60
+89            android:configChanges="orientation|screenSize"
+89-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:79:13-59
+90            android:theme="@style/Transparent" />
+90-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:80:13-47
+91        <activity
+91-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:81:9-86:45
+92            android:name="com.github.muneebwanee.dash.ui.activities.socialphishing.SocialActivityM"
+92-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:82:13-73
+93            android:configChanges="orientation|screenSize"
+93-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:83:13-59
+94            android:excludeFromRecents="true"
+94-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:84:13-46
+95            android:taskAffinity="com.github.muneebwanee.dash.ui.activities.socialphishing.SocialActivityM"
+95-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:85:13-108
+96            android:theme="@style/Social" />
+96-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:86:13-42
+97
+98        <!-- Services -->
+99        <service android:name="com.github.muneebwanee.dash.services.calls.CallsService" />
+99-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:89:9-64
+99-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:89:18-61
+100        <service android:name="com.github.muneebwanee.dash.services.sms.SmsService" />
+100-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:90:9-60
+100-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:90:18-57
+101        <service android:name="com.github.muneebwanee.dash.services.social.MonitorService" />
+101-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:91:9-67
+101-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:91:18-64
+102        <service
+102-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:92:9-104:19
+103            android:name="com.github.muneebwanee.dash.services.accessibilityData.AccessibilityDataService"
+103-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:93:13-80
+104            android:label="@string/accessibility_service_label"
+104-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:94:13-64
+105            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+105-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:95:13-79
+106            <intent-filter>
+106-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:97:13-99:29
+107                <action android:name="android.accessibilityservice.AccessibilityService" />
+107-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:98:17-92
+107-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:98:25-89
+108            </intent-filter>
+109
+110            <meta-data
+110-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:101:13-103:72
+111                android:name="android.accessibilityservice"
+111-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:102:17-60
+112                android:resource="@xml/accessibility_service_config" />
+112-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:103:17-69
+113        </service>
+114        <service
+114-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:105:9-111:19
+115            android:name="com.github.muneebwanee.dash.services.notificationService.NotificationService"
+115-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:106:13-77
+116            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+116-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:107:13-87
+117            <intent-filter>
+117-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:108:13-110:29
+118                <action android:name="android.service.notification.NotificationListenerService" />
+118-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:109:17-99
+118-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:109:25-96
+119            </intent-filter>
+120        </service>
+121
+122        <!-- Receivers -->
+123        <receiver
+123-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:114:9-122:20
+124            android:name="com.github.muneebwanee.dash.receiver.SmsReceiver"
+124-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:115:13-49
+125            android:enabled="true"
+125-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:116:13-35
+126            android:exported="true"
+126-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:117:13-36
+127            android:permission="android.permission.BROADCAST_SMS" >
+127-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:118:13-66
+128            <intent-filter android:priority="999" >
+128-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:119:13-121:29
+128-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:119:28-50
+129                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+129-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:120:17-82
+129-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:120:25-79
+130            </intent-filter>
+131        </receiver>
+132        <receiver android:name="com.github.muneebwanee.dash.receiver.CallsReceiver" >
+132-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:123:9-128:20
+132-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:123:19-57
+133            <intent-filter android:priority="999" >
+133-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:124:13-127:29
+133-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:124:28-50
+134                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+134-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:125:17-82
+134-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:125:25-79
+135                <action android:name="android.intent.action.PHONE_STATE" />
+135-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:126:17-76
+135-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:126:25-73
+136            </intent-filter>
+137        </receiver>
+138        <receiver
+138-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:129:9-136:20
+139            android:name="com.github.muneebwanee.dash.receiver.MonitorReceiver"
+139-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:130:13-53
+140            android:enabled="true"
+140-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:131:13-35
+141            android:exported="false" >
+141-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:132:13-37
+142            <intent-filter>
+142-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:133:13-135:29
+143                <action android:name="com.github.muneebwanee.dash.receiver.RESTART_MONITOR_RECEIVER" />
+143-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:134:17-104
+143-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:134:25-101
+144            </intent-filter>
+145        </receiver>
+146
+147        <meta-data
+147-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:138:9-140:69
+148            android:name="com.google.android.gms.version"
+148-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:139:13-58
+149            android:value="@integer/google_play_services_version" />
+149-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:140:13-66
+150        <meta-data
+150-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:141:9-143:52
+151            android:name="com.google.android.maps.v2.API_KEY"
+151-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:142:13-62
+152            android:value="@string/APY_KEY_MAPS" />
+152-->/home/hassan/Documents/my/android/Dash-main/Dash/app/src/main/AndroidManifest.xml:143:13-49
+153        <meta-data
+153-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:19:9-21:63
+154            android:name="com.facebook.sdk.ApplicationId"
+154-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:20:13-58
+155            android:value="@string/facebook_application_id" />
+155-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:21:13-60
+156
+157        <activity
+157-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:23:9-27:61
+158            android:name="com.firebase.ui.auth.KickoffActivity"
+158-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:24:13-64
+159            android:exported="false"
+159-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:25:13-37
+160            android:label=""
+160-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:26:13-29
+161            android:theme="@style/FirebaseUI.Transparent" />
+161-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:27:13-58
+162        <activity
+162-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:28:9-32:61
+163            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+163-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:29:13-76
+164            android:exported="false"
+164-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:30:13-37
+165            android:label=""
+165-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:31:13-29
+166            android:theme="@style/FirebaseUI.Transparent" />
+166-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:32:13-58
+167        <activity
+167-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:33:9-37:61
+168            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+168-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:34:13-86
+169            android:exported="false"
+169-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:35:13-37
+170            android:label=""
+170-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:36:13-29
+171            android:theme="@style/FirebaseUI.Transparent" />
+171-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:37:13-58
+172        <activity
+172-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:38:9-42:58
+173            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+173-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:39:13-81
+174            android:exported="false"
+174-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:40:13-37
+175            android:label="@string/fui_title_recover_password_activity"
+175-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:41:13-72
+176            android:windowSoftInputMode="adjustResize" />
+176-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:42:13-55
+177        <activity
+177-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:43:9-47:58
+178            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+178-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:44:13-71
+179            android:exported="false"
+179-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:45:13-37
+180            android:label="@string/fui_sign_in_default"
+180-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:46:13-56
+181            android:windowSoftInputMode="adjustResize" />
+181-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:47:13-55
+182        <activity
+182-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:48:9-52:77
+183            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+183-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:49:13-71
+184            android:exported="false"
+184-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:50:13-37
+185            android:label="@string/fui_sign_in_with_phone_number"
+185-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:51:13-66
+186            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+186-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:52:13-74
+187        <activity
+187-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:53:9-57:58
+188            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+188-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:54:13-76
+189            android:exported="false"
+189-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:55:13-37
+190            android:label="@string/fui_title_welcome_back_idp_prompt"
+190-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:56:13-70
+191            android:windowSoftInputMode="adjustResize" />
+191-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:57:13-55
+192        <activity
+192-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:58:9-62:58
+193            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+193-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:59:13-83
+194            android:exported="false"
+194-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:60:13-37
+195            android:label="@string/fui_title_welcome_back_password_prompt"
+195-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:61:13-75
+196            android:windowSoftInputMode="adjustResize" />
+196-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:62:13-55
+197        <activity
+197-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:63:9-67:58
+198            android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt"
+198-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:64:13-84
+199            android:exported="false"
+199-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:65:13-37
+200            android:label="@string/fui_title_welcome_back_password_prompt"
+200-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:66:13-75
+201            android:windowSoftInputMode="adjustResize" />
+201-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:67:13-55
+202        <activity
+202-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:68:9-73:58
+203            android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity"
+203-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:69:13-82
+204            android:exported="false"
+204-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:70:13-37
+205            android:label=""
+205-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:71:13-29
+206            android:theme="@style/FirebaseUI.Transparent"
+206-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:72:13-58
+207            android:windowSoftInputMode="adjustResize" />
+207-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:73:13-55
+208        <activity
+208-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:74:9-78:58
+209            android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity"
+209-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:75:13-88
+210            android:exported="false"
+210-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:76:13-37
+211            android:label="@string/fui_sign_in_default"
+211-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:77:13-56
+212            android:windowSoftInputMode="adjustResize" />
+212-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:78:13-55
+213        <activity
+213-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:79:9-82:65
+214            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+214-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:80:13-80
+215            android:exported="false"
+215-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:81:13-37
+216            android:label="@string/fui_default_toolbar_title" />
+216-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:82:13-62
+217        <activity
+217-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:83:9-87:48
+218            android:name="com.facebook.FacebookActivity"
+218-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:84:13-57
+219            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+219-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:85:13-96
+220            android:label="@string/app_name" />
+220-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:86:13-45
+221        <activity
+221-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:88:9-100:20
+222            android:name="com.facebook.CustomTabActivity"
+222-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:89:13-58
+223            android:exported="true" >
+223-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:90:13-36
+224            <intent-filter>
+224-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:92:13-99:29
+225                <action android:name="android.intent.action.VIEW" />
+225-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:93:17-69
+225-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:93:25-66
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:95:17-76
+227-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:95:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:96:17-78
+228-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:96:27-75
+229
+230                <data android:scheme="@string/facebook_login_protocol_scheme" />
+230-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:98:17-81
+230-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:98:23-78
+231            </intent-filter>
+232        </activity>
+233
+234        <provider
+234-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:102:9-106:38
+235            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+235-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:103:13-79
+236            android:authorities="com.github.muneebwanee.dash.authuiinitprovider"
+236-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:104:13-70
+237            android:exported="false"
+237-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:105:13-37
+238            android:initOrder="90" />
+238-->[com.firebaseui:firebase-ui-auth:5.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/d5e2b803f45d3ed17137bd6dcb2b4a8e/jetified-firebase-ui-auth-5.1.0/AndroidManifest.xml:106:13-35
+239
+240        <activity
+240-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:24:9-31:50
+241            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+241-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:25:13-85
+242            android:excludeFromRecents="true"
+242-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:26:13-46
+243            android:exported="true"
+243-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:27:13-36
+244            android:launchMode="singleTask"
+244-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:28:13-44
+245            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+245-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:29:13-102
+246            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+246-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:30:13-72
+247
+248        <service
+248-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:33:9-39:19
+249            android:name="com.google.firebase.components.ComponentDiscoveryService"
+249-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:34:13-84
+250            android:directBootAware="true"
+250-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:14:13-43
+251            android:exported="false" >
+251-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:35:13-37
+252            <meta-data
+252-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:36:13-38:85
+253                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+253-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:37:17-109
+254                android:value="com.google.firebase.components.ComponentRegistrar" />
+254-->[com.google.firebase:firebase-auth:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/e1ed4074da58d96610918e72b293926f/firebase-auth-19.0.0/AndroidManifest.xml:38:17-82
+255            <meta-data
+255-->[com.google.firebase:firebase-database:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/a6278390111a04b519d0a37f71c708f1/firebase-database-19.1.0/AndroidManifest.xml:32:13-34:85
+256                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+256-->[com.google.firebase:firebase-database:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/a6278390111a04b519d0a37f71c708f1/firebase-database-19.1.0/AndroidManifest.xml:33:17-109
+257                android:value="com.google.firebase.components.ComponentRegistrar" />
+257-->[com.google.firebase:firebase-database:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/a6278390111a04b519d0a37f71c708f1/firebase-database-19.1.0/AndroidManifest.xml:34:17-82
+258            <meta-data
+258-->[com.google.firebase:firebase-storage:19.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2b3d639e2ffd685c4a67b243efd2e0b6/firebase-storage-19.0.1/AndroidManifest.xml:33:13-35:85
+259                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+259-->[com.google.firebase:firebase-storage:19.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2b3d639e2ffd685c4a67b243efd2e0b6/firebase-storage-19.0.1/AndroidManifest.xml:34:17-107
+260                android:value="com.google.firebase.components.ComponentRegistrar" />
+260-->[com.google.firebase:firebase-storage:19.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2b3d639e2ffd685c4a67b243efd2e0b6/firebase-storage-19.0.1/AndroidManifest.xml:35:17-82
+261            <meta-data
+261-->[com.google.firebase:firebase-firestore:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/efb6906fcfd34c6920b5a86391e45a81/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:18:13-20:85
+262                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+262-->[com.google.firebase:firebase-firestore:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/efb6906fcfd34c6920b5a86391e45a81/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:19:17-111
+263                android:value="com.google.firebase.components.ComponentRegistrar" />
+263-->[com.google.firebase:firebase-firestore:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/efb6906fcfd34c6920b5a86391e45a81/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:20:17-82
+264            <meta-data
+264-->[com.google.android.gms:play-services-measurement-api:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/4b3511beb2e4e6da526b6458cc3827b5/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
+265                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+265-->[com.google.android.gms:play-services-measurement-api:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/4b3511beb2e4e6da526b6458cc3827b5/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
+266                android:value="com.google.firebase.components.ComponentRegistrar" />
+266-->[com.google.android.gms:play-services-measurement-api:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/4b3511beb2e4e6da526b6458cc3827b5/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
+267            <meta-data
+267-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+268                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+268-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+269                android:value="com.google.firebase.components.ComponentRegistrar" />
+269-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+270        </service> <!-- Needs to be explicitly declared on P+ -->
+271        <uses-library
+271-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+272            android:name="org.apache.http.legacy"
+272-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+273            android:required="false" />
+273-->[com.google.android.gms:play-services-maps:17.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/71909c65532bfdb12cc2ac689e197574/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+274
+275        <provider
+275-->[com.squareup.picasso:picasso:2.71828] /home/hassan/.gradle/caches/transforms-2/files-2.1/1f3ec8b68b546822e2cdf74a3cb6a376/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+276            android:name="com.squareup.picasso.PicassoProvider"
+276-->[com.squareup.picasso:picasso:2.71828] /home/hassan/.gradle/caches/transforms-2/files-2.1/1f3ec8b68b546822e2cdf74a3cb6a376/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+277            android:authorities="com.github.muneebwanee.dash.com.squareup.picasso"
+277-->[com.squareup.picasso:picasso:2.71828] /home/hassan/.gradle/caches/transforms-2/files-2.1/1f3ec8b68b546822e2cdf74a3cb6a376/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+278            android:exported="false" />
+278-->[com.squareup.picasso:picasso:2.71828] /home/hassan/.gradle/caches/transforms-2/files-2.1/1f3ec8b68b546822e2cdf74a3cb6a376/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+279
+280        <activity
+280-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+281            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+281-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+282            android:excludeFromRecents="true"
+282-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+283            android:exported="false"
+283-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+284            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+284-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+285        <!--
+286            Service handling Google Sign-In user revocation. For apps that do not integrate with
+287            Google Sign-In, this service will never be started.
+288        -->
+289        <service
+289-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+290            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+290-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+291            android:exported="true"
+291-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+292            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+292-->[com.google.android.gms:play-services-auth:16.0.1] /home/hassan/.gradle/caches/transforms-2/files-2.1/2387a302779047b07e39f027f4d810f8/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+293
+294        <receiver
+294-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+295            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+295-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+296            android:exported="true"
+296-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+297            android:permission="com.google.android.c2dm.permission.SEND" >
+297-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+298            <intent-filter>
+298-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+299                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+299-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+299-->[com.google.firebase:firebase-iid:19.0.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/bed1bf843e192458974b04f955ed4a23/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+300            </intent-filter>
+301        </receiver>
+302
+303        <activity
+303-->[com.google.android.gms:play-services-base:17.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/50764af9d5adee4f00b20a7faf22e665/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+304            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+304-->[com.google.android.gms:play-services-base:17.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/50764af9d5adee4f00b20a7faf22e665/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+305            android:exported="false"
+305-->[com.google.android.gms:play-services-base:17.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/50764af9d5adee4f00b20a7faf22e665/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+306            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+306-->[com.google.android.gms:play-services-base:17.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/50764af9d5adee4f00b20a7faf22e665/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+307
+308        <provider
+308-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:17:9-21:39
+309            android:name="com.google.firebase.provider.FirebaseInitProvider"
+309-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:18:13-77
+310            android:authorities="com.github.muneebwanee.dash.firebaseinitprovider"
+310-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:19:13-72
+311            android:exported="false"
+311-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:20:13-37
+312            android:initOrder="100" />
+312-->[com.google.firebase:firebase-common:19.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/aef2a6c73def32f78b64ca0d18008561/firebase-common-19.1.0/AndroidManifest.xml:21:13-36
+313
+314        <receiver
+314-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
+315            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+315-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
+316            android:enabled="true"
+316-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
+317            android:exported="false" >
+317-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
+318        </receiver>
+319        <receiver
+319-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
+320            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+320-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
+321            android:enabled="true"
+321-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
+322            android:exported="true"
+322-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
+323            android:permission="android.permission.INSTALL_PACKAGES" >
+323-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
+324            <intent-filter>
+324-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
+325                <action android:name="com.android.vending.INSTALL_REFERRER" />
+325-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
+325-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
+326            </intent-filter>
+327        </receiver>
+328
+329        <service
+329-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
+330            android:name="com.google.android.gms.measurement.AppMeasurementService"
+330-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
+331            android:enabled="true"
+331-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
+332            android:exported="false" />
+332-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
+333        <service
+333-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
+334            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+334-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
+335            android:enabled="true"
+335-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
+336            android:exported="false"
+336-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
+337            android:permission="android.permission.BIND_JOB_SERVICE" />
+337-->[com.google.android.gms:play-services-measurement:17.2.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/3241869ba451f8cb52ca30a3a21a5dfe/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
+338
+339        <provider
+339-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/84af0ffeb8add0c32316dfa090965b0b/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+340            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+340-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/84af0ffeb8add0c32316dfa090965b0b/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+341            android:authorities="com.github.muneebwanee.dash.lifecycle-process"
+341-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/84af0ffeb8add0c32316dfa090965b0b/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+342            android:exported="false"
+342-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/84af0ffeb8add0c32316dfa090965b0b/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+343            android:multiprocess="true" />
+343-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/hassan/.gradle/caches/transforms-2/files-2.1/84af0ffeb8add0c32316dfa090965b0b/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+344    </application>
+345
+346</manifest>

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.widget.Button
 import android.widget.EditText
-import com.github.muneebwanee.da.R
+import com.github.muneebwanee.dash.R
 import com.github.muneebwanee.dash.data.model.Social
 import com.github.muneebwanee.dash.data.rxFirebase.InterfaceFirebase
 import com.github.muneebwanee.dash.services.social.MonitorService

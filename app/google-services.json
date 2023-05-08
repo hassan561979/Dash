@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "462161500100",
+    "firebase_url": "https://micro-dash-1d706-default-rtdb.firebaseio.com",
+    "project_id": "micro-dash-1d706",
+    "storage_bucket": "micro-dash-1d706.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462161500100:android:382439314d143cdf92f691",
+        "android_client_info": {
+          "package_name": "com.github.muneebwanee.dash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462161500100-2t2lthvi3tc04341kglqgvgrg1rsgn3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1QvhsUQQ8K2an57n8vTmsFpKAT-PAiv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462161500100-2t2lthvi3tc04341kglqgvgrg1rsgn3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

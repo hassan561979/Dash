@@ -4,7 +4,7 @@
     <string name="login_hint_user">Mail</string>
     <string name="login_hint_passw">Password</string>
     <string name="login_btn_sign_in">LOG IN</string>
-    <string name="login_txt_sign_up">Don't have an account yet? Sign up</string>
+    <string name="login_txt_sign_up">Do not have an account yet? Sign up</string>
     <string name="login_success">Login Successful</string>
     <string name="login_failed_try_again_later">Login failed, please try again later</string>
     <string name="login_failed">Login error</string>
@@ -29,10 +29,10 @@
     <string name="failed_photo">Failed to get photos</string>
     <string name="failed_social">Failed to get credentials</string>
     <string name="failed_keys_text">Failed to get keyLogger</string>
-    <string name="not_have_audios_yet">You still don't have audios.</string>
+    <string name="not_have_audios_yet">You still do not have audios.</string>
     <string name="not_have_sms_yet">You still have no messages</string>
-    <string name="not_have_key_text">You don't have keyLog.</string>
-    <string name="not_have_photo_yet">You don't have photos yet</string>
+    <string name="not_have_key_text">You do not have keyLog.</string>
+    <string name="not_have_photo_yet">You do not have photos yet</string>
     <string name="social">Social</string>
     <string name="setting">Settings</string>
     <string name="clear_calls_list">Delete calls</string>

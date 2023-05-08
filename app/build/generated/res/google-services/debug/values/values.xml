@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">462161500100-2t2lthvi3tc04341kglqgvgrg1rsgn3e.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://micro-dash-1d706-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">462161500100</string>
+    <string name="google_api_key" translatable="false">AIzaSyC1QvhsUQQ8K2an57n8vTmsFpKAT-PAiv0</string>
+    <string name="google_app_id" translatable="false">1:462161500100:android:382439314d143cdf92f691</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC1QvhsUQQ8K2an57n8vTmsFpKAT-PAiv0</string>
+    <string name="google_storage_bucket" translatable="false">micro-dash-1d706.appspot.com</string>
+    <string name="project_id" translatable="false">micro-dash-1d706</string>
+</resources>
