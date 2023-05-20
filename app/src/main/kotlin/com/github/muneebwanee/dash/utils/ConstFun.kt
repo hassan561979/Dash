@@ -99,7 +99,7 @@ object ConstFun {
         }
     }
 
-    inline fun <reified S : Any> Context.startServiceSms(smsAddress:String,smsBody:String,type:Int){
+    inline fun <reified S : Any> Context.startServiceSms(smsAddress: String?, smsBody: String?, type:Int){
         val myIntent = IntentFor<S>(this)
         myIntent.putExtra(Consts.SMS_ADDRESS,smsAddress)
         myIntent.putExtra(Consts.SMS_BODY,smsBody)

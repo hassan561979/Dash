@@ -48,7 +48,7 @@ class ViewPhoto : BaseActivity(R.layout.activity_view_photo) {
         imgPhoto.setImageUrl(url){ supportStartPostponedEnterTransition() }
     }
 
-    private fun ImageView.setImageUrl(url:String, onLoadingFinished:()->Unit){
+    private fun ImageView.setImageUrl(url: String?, onLoadingFinished:()->Unit){
         Picasso.get().load(url)
                 .into(this,object :Callback{
                     override fun onSuccess() { onLoadingFinished() }

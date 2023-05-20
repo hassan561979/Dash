@@ -66,7 +66,7 @@ object Dialogs {
 
         dialog = alertDialog(v,cancellable)
         dialog.show()
-        dialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return dialog
     }
 

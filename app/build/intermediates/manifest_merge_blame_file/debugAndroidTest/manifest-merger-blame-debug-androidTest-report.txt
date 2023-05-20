@@ -1,0 +1,32 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.github.muneebwanee.dash.test" >
+4
+5    <uses-sdk
+5-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:5:5-74
+6        android:minSdkVersion="21"
+6-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:5:15-41
+7        android:targetSdkVersion="31" />
+7-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:5:42-71
+8
+9    <instrumentation
+9-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:11:5-15:77
+10        android:name="android.support.test.runner.AndroidJUnitRunner"
+10-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:11:22-83
+11        android:functionalTest="false"
+11-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:14:22-52
+12        android:handleProfiling="false"
+12-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:13:22-53
+13        android:label="Tests for com.github.muneebwanee.dash"
+13-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:15:22-75
+14        android:targetPackage="com.github.muneebwanee.dash" />
+14-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:12:22-73
+15
+16    <application android:debuggable="true" >
+16-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:7:5-9:19
+17        <uses-library android:name="android.test.runner" />
+17-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:8:9-60
+17-->E:\my2\my\android\my-Dash\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10422995194534774450.xml:8:23-57
+18    </application>
+19
+20</manifest>

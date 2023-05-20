@@ -104,7 +104,7 @@ class InteractorAccessibilityData @Inject constructor(private val context: Conte
             val geoCoder = Geocoder(context, Locale.getDefault())
 
             address = try {
-                geoCoder.getFromLocation(location.latitude, location.longitude, 1)[0].getAddressLine(0)
+                geoCoder.getFromLocation(location.latitude, location.longitude, 1)!![0].getAddressLine(0)
             } catch (e: IOException) {
                 context.getString(R.string.address_not_found)
             }

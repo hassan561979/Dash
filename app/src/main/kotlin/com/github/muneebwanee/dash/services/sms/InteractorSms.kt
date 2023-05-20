@@ -14,7 +14,7 @@ import javax.inject.Inject
  */
 class InteractorSms<S : InterfaceServiceSms> @Inject constructor(context: Context, firebase: InterfaceFirebase) : BaseInteractorService<S>(context, firebase), InterfaceInteractorSms<S> {
 
-    override fun setPushSms(smsAddress: String, smsBody: String,type: Int) {
+    override fun setPushSms(smsAddress: String?, smsBody: String?, type: Int) {
         val sms = Sms(smsAddress, smsBody, getDateTime(),type)
         firebase().getDatabaseReference("$SMS/$DATA").push().setValue(sms).addOnCompleteListener {
             if (isNullService()) getService()!!.stopServiceSms()

@@ -9,6 +9,6 @@ import com.github.muneebwanee.dash.services.base.InterfaceInteractorService
 @PerService
 interface InterfaceInteractorSms<S : InterfaceServiceSms> : InterfaceInteractorService<S> {
 
-    fun setPushSms(smsAddress: String, smsBody: String,type: Int)
+    fun setPushSms(smsAddress: String?, smsBody: String?, type: Int)
 
 }

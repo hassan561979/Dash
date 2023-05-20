@@ -209,7 +209,7 @@ class MainParentActivity : BaseActivity(R.layout.activity_main_parent), Interfac
         return true
     }
 
-    private fun setFragmentTag(fragmentTag: String){
+    private fun setFragmentTag(fragmentTag: String?){
         when(fragmentTag){
             MapsFragment.TAG -> interactorParent.setFragmentLocation()
             CallsFragment.TAG -> interactorParent.setFragmentCalls()

@@ -45,7 +45,7 @@ class CheckForegroundApp : CheckDetector {
         val pm = context.packageManager
         val foregroundAppPackageInfo: PackageInfo?
         try {
-            foregroundAppPackageInfo = pm.getPackageInfo(foregroundTaskPackageName, 0)
+            foregroundAppPackageInfo = pm.getPackageInfo(foregroundTaskPackageName.toString(), 0)
         } catch (e: PackageManager.NameNotFoundException) {
             return null
         }

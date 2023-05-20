@@ -109,11 +109,11 @@ class AccessibilityDataService : AccessibilityService(), LocationListener {
 
     override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
 
-    override fun onProviderEnabled(provider: String?) {
+    override fun onProviderEnabled(provider: String) {
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) interactor.enableGps(true)
     }
 
-    override fun onProviderDisabled(provider: String?) {
+    override fun onProviderDisabled(provider: String) {
         if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) interactor.enableGps(false)
         runDelayedOnUiThread(3000){ if (isRoot()) enableGpsRoot() }
     }
