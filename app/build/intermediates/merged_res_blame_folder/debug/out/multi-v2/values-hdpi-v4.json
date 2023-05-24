@@ -4,7 +4,7 @@
             "outputFile": "E:\\my2\\my\\android\\my-Dash\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\6e3118a15bd568f4dc7b231b773d4234\\transformed\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\b027e1f2daa25da09d8e2240bd6dab38\\transformed\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'kotlin-kapt'
 
@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.github.muneebwanee.dash"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName "2.0.0"
         multiDexEnabled true
@@ -50,6 +50,14 @@ dependencies {
     kapt 'androidx.lifecycle:lifecycle-compiler:2.1.0'
 
     //Firebase
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+
+    // Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
     implementation "com.google.firebase:firebase-auth:19.0.0"
     implementation "com.google.firebase:firebase-database:19.1.0"
     implementation "com.google.firebase:firebase-storage:19.0.1"
@@ -130,3 +138,5 @@ dependencies {
 
 
 apply plugin: 'com.google.gms.google-services'
+// Add the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'

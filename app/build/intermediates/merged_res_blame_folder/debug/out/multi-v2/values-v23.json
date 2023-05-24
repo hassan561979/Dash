@@ -4,7 +4,7 @@
             "outputFile": "E:\\my2\\my\\android\\my-Dash\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\64e1f836f997f55fe46e095fc3671621\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\cbeee43dd10dbb3a9e9ab9a996c0fd8d\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\6e3118a15bd568f4dc7b231b773d4234\\transformed\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\b027e1f2daa25da09d8e2240bd6dab38\\transformed\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

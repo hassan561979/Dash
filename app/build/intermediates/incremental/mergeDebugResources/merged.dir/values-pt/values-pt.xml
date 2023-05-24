@@ -28,6 +28,10 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
     <string name="fui_accessibility_logo">Logotipo do app</string>
     <string name="fui_auto_verified">O número de telefone foi verificado automaticamente</string>
     <string name="fui_button_text_save">Salvar</string>
@@ -116,5 +120,5 @@
     <string name="fui_welcome_back_idp_prompt">Você já usou o e-mail %1$s. Faça login com o %2$s para continuar.</string>
     <string name="fui_welcome_back_password_prompt_body">Você já usou o e-mail %1$s para fazer login. Insira a senha dessa conta.</string>
     <string msgid="730395136688082741" name="search_menu_title">"Pesquisar"</string>
-    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

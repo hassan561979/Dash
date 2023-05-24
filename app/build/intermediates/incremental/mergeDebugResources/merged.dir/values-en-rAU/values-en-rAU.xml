@@ -28,6 +28,10 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Share with"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Share with <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Collapse"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copied to clipboard"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copy link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Open in browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Share link"</string>
     <string name="fui_accessibility_logo">App logo</string>
     <string name="fui_auto_verified">Phone number automatically verified</string>
     <string name="fui_button_text_save">Save</string>
@@ -116,5 +120,5 @@
     <string name="fui_welcome_back_idp_prompt">You\'ve already used %1$s. Sign in with %2$s to continue.</string>
     <string name="fui_welcome_back_password_prompt_body">You\'ve already used %1$s to sign in. Enter your password for that account.</string>
     <string msgid="730395136688082741" name="search_menu_title">"Search"</string>
-    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

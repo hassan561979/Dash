@@ -2322,6 +2322,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals fui_error_weak_password
+raw firebase_common_keep
 string APY_KEY_MAPS
 string LOADING
 string abc_action_bar_home_description
@@ -2385,6 +2386,7 @@ string clear_record_list
 string clear_sms_list
 string clear_social_credentials
 string closed_for_inactivity
+string com_google_firebase_crashlytics_mapping_file_id
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -2403,6 +2405,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string create_new_facebook_account
 string credentials
 string current_access_code
@@ -2458,6 +2461,9 @@ string failed_photo
 string failed_record_audios
 string failed_sms
 string failed_social
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string fifteen_minute
 string finish_application_for_inactivity
 string firebase_database_url
@@ -3411,3 +3417,4 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml accessibility_service_config
+xml image_share_filepaths

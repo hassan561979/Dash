@@ -2,7 +2,7 @@ package com.github.muneebwanee.dash.ui.animation;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\n\u0010\u0003\u001a\u00020\u0004*\u00020\u0005\u00a8\u0006\u0006"}, d2 = {"Lcom/github/muneebwanee/dash/ui/animation/AnimationUtils;", "", "()V", "animateAlpha", "Landroid/view/animation/AlphaAnimation;", "Landroid/view/View;", "app_debug"})
+@kotlin.Metadata(mv = {1, 8, 0}, k = 1, d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\n\u0010\u0003\u001a\u00020\u0004*\u00020\u0005\u00a8\u0006\u0006"}, d2 = {"Lcom/github/muneebwanee/dash/ui/animation/AnimationUtils;", "", "()V", "animateAlpha", "Landroid/view/animation/AlphaAnimation;", "Landroid/view/View;", "app_debug"})
 public final class AnimationUtils {
     @org.jetbrains.annotations.NotNull
     public static final com.github.muneebwanee.dash.ui.animation.AnimationUtils INSTANCE = null;

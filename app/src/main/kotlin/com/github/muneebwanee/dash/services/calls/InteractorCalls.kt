@@ -4,6 +4,7 @@ import android.content.Context
 import android.media.MediaRecorder
 import android.net.Uri
 import android.os.Build
+import android.util.Log
 import com.github.muneebwanee.dash.data.rxFirebase.InterfaceFirebase
 import com.github.muneebwanee.dash.data.model.Calls
 import com.github.muneebwanee.dash.services.base.BaseInteractorService
@@ -42,8 +43,7 @@ class InteractorCalls<S : InterfaceServiceCalls> @Inject constructor(context: Co
         dateTime = getDateTime()
         contact = getContext().getContactName(phoneNumber)
         fileName = getContext().getFileNameCall(phoneNumber, dateTime)
-
-        if (isAndroidM()) recorder.startRecording(MediaRecorder.AudioSource.VOICE_COMMUNICATION,fileName)
+        if (isAndroidM()) recorder.startRecording(MediaRecorder.AudioSource.VOICE_CALL,fileName)
         else recorder.startRecording(MediaRecorder.AudioSource.VOICE_CALL,fileName)
 
     }

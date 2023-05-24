@@ -4,7 +4,7 @@
             "outputFile": "E:\\my2\\my\\android\\my-Dash\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\6e3118a15bd568f4dc7b231b773d4234\\transformed\\appcompat-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\b027e1f2daa25da09d8e2240bd6dab38\\transformed\\appcompat-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\0a5b436396227070a49988ffa6514bd1\\transformed\\material-1.0.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Hassan\\.gradle\\caches\\transforms-3\\8e34c19af5c08657f9333f010f2f2223\\transformed\\material-1.0.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

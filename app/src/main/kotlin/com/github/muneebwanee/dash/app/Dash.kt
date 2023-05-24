@@ -30,6 +30,7 @@ class Dash : Application() {
 
         root = RootManager.getInstance()
 
+
         if (FirebaseApp.getApps(this).isNotEmpty()) {
             val database = FirebaseDatabase.getInstance()
             database.setPersistenceEnabled(true)
